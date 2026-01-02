@@ -21,17 +21,17 @@ This repository implements 3D object detection for vehicles using PointPillars A
 ### Software Versions (per container)
 본 프로젝트는 센서 드라이버와 추론(AI)을 컨테이너로 분리하여, 실행 안정성 및 재현성을 높임
 
-**Container A — Velodyne Driver (ros_velodyne)**
+**Container A — Velodyne Driver (name: ros_velodyne)**
 - Ubuntu: 20.04
 - ROS: Noetic
 - Packages: velodyne_driver, velodyne_pointcloud
 - Python: (optional / not used for core driver)
 - PyTorch: N/A
 - Notes
-Publishes:/velodyne_packets, /velodyne_points
+Publishes:/velodyne_packets, /velodyne_points  
 PointCloud2 fields include x, y, z, intensity, ring, time (point_step=22)
 
-**Container B — 3D Detection (ppdet)**
+**Container B — 3D Detection (name: ppdet)**
 - Pytorch version: 
 - python version:
 - OpenPCdet version: 
