@@ -8,11 +8,11 @@ This repository implements 3D object detection for vehicles using PointPillars A
 <img width="473" height="434" alt="image" src="https://github.com/user-attachments/assets/60728fa1-c385-4f04-b890-f6b0199d8749" />
 
 # Environment & Requirements
-## Hardware
+### Hardware
 GPU: NVIDIA RTX 4060 (Laptop)
 Sensor: Velodyne VLP-16 (16-channel)
 
-## Host(Laptop)
+### Host(Laptop)
 OS: Ubuntu 22.04 (running on external SSD)
 Docker: used to isolate ROS/AI environments
 Networking: containers communicate via ROS master (host or one container) / host networking recommended
