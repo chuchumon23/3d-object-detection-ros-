@@ -5,7 +5,8 @@ This repository implements 3D object detection for vehicles using PointPillars A
 본 프로젝트는 16채널 Velodyne LiDAR(VLP-16)를 사용하여 포인트 클라우드 데이터를 수집하고,ROS 및 Docker 환경에서 PointPillars 기반 3D 객체 검출을 수행한다.
 
 # Demo
-<img width="473" height="434" alt="image" src="https://github.com/user-attachments/assets/60728fa1-c385-4f04-b890-f6b0199d8749" />
+<img width="656" height="450" alt="image" src="https://github.com/user-attachments/assets/182a40f3-5eb2-48c6-a05e-484b4e11990f" />
+
 
 # Environment & Requirements
 ### Hardware
