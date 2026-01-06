@@ -70,5 +70,10 @@ This repository implements 3D object detection for vehicles using PointPillars A
 
 
 
+## System Architecture
+<img width="1074" height="660" alt="image" src="https://github.com/user-attachments/assets/b6b44ee0-b033-4090-84c0-d87c068cf168" />
+
+
+
 
 
