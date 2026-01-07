@@ -149,8 +149,14 @@ python3 /workspace/ros_nodes/pp_infer_node.py
 | `~detect_pedestrian` |                                     `true` | Enable `Pedestrian` class                                     |
 | `~detect_cyclist`    |                                     `true` | Enable `Cyclist` class                                        |
 
+### 3)OpenPCDet Model Configuration
+- Config file: tools/cfgs/kitti_models/pointpillar.yaml
+- Checkpoint: pretrained/pointpillar_7728.pth
+- OpenPCDet commit: 233f849 (source build)
 
-
+### 4) Intensity Normalization Note
+The KITTI pretrained PointPillars model expects intensity values normalized to [0, 1].
+If your LiDAR publishes raw intensity (e.g., [0, 255]), normalize it before inference to avoid unstable detections.
   
 
 
