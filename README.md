@@ -89,7 +89,7 @@ docker run -it -d \
   osrf/ros:noetic-desktop-full \
   /bin/bash
 ```
-Container A uses the official ROS Noetic Docker image and does not require a custom Dockerfile.
+>Container A uses the official ROS Noetic Docker image and does not require a custom Dockerfile.
 
 - Create container B (ppdet)
 ```
