@@ -104,7 +104,7 @@ docker run -it -d \
 >The Dockerfile is provided to ensure full reproducibility of the ML and ROS environment.
 >The Dockerfile used to build the 3D detection container is provided in: docker/ppdet/Dockerfile
 ```
-docker build --no-cache -t ppdet:b_cu118_noetic .
+docker build --no-cache -t ppdet:b_cu118_noetic 
 ```
 
 - start container A(ros_velodyne)
