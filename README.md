@@ -75,7 +75,8 @@ This project separates the sensor driver and AI inference into different contain
 
 
 ## Quick start
-> This Quickstart describes the minimal steps for running the system assuming a compatible GPU and driver environment.
+>This Quickstart describes the minimal steps required to run the system, assuming a compatible GPU and NVIDIA driver environment.
+> Note: This project uses host networking. Ensure that all containers share the same ROS master.
 
 - Create container A (ros_velodyne)
 ```
@@ -91,7 +92,14 @@ docker run -it -d \
 ```
 >Container A uses the official ROS Noetic Docker image and does not require a custom Dockerfile.
 
-- Create container B (ppdet)
+- Create container B (ppdet)  
+>The Dockerfile is provided to ensure full reproducibility of the ML and ROS environment.
+>The Dockerfile used to build the 3D detection container is provided in: docker/ppdet/Dockerfile
+
+```
+docker build --no-cache -t ppdet:b_cu118_noetic 
+```
+
 ```
 docker run -it -d \
   --name ppdet \
@@ -100,11 +108,6 @@ docker run -it -d \
   --ipc=host \
   -v ~/ppdet_ws:/workspace \
   ppdet:b_cu118_noetic
-```
->The Dockerfile is provided to ensure full reproducibility of the ML and ROS environment.
->The Dockerfile used to build the 3D detection container is provided in: docker/ppdet/Dockerfile
-```
-docker build --no-cache -t ppdet:b_cu118_noetic 
 ```
 
 - start container A(ros_velodyne)
